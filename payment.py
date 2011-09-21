@@ -47,7 +47,7 @@ def ErrorFile():
 def Help():
 	print "Payment version 1.1"
 	print ""
-	print "Copyright (c)2009 Petr Nohejl, project.jestrab.net"
+	print "Copyright (c)2009 Petr Nohejl, jestrab.net"
 	print ""
 	print "Program count your payment and show statistics."
 	print "You must set your payment per hour and name of text file,"
