@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+
+Payment
+(c) 2009 Petr Nohejl
+
+Payment je jednoduchý program pro zobrazení statistik a výpočet výplaty podle
+odpracovaných hodin. Uživatel zadá svou hodinovou mzdu a soubor s databází
+odpracovaných hodin. Program sečte jednotlivé hodiny a zobrazí počet
+jednotlivých úloh, délku nejkratší a nejdelší úlohy, průměrnou délku úlohy,
+celkový počet odpracovaných hodin a celkovou výplatní částku. 
+
+--------------------------------------------------------------------------------
+
+Instalace:
+
+Payment je konzolová aplikace (spouští se v příkazovém řádku) a je napsána v
+jazyce Python 2.6. Pro její spuštění je třeba mít nainstalován interpret jazyka
+Python, který lze stáhnout na adrese: www.python.org. 
+
+--------------------------------------------------------------------------------
+
+Ovládání: 
+
+payment -dec money_per_hour text_file
+     vypočte celkovou mzdu a vypíše statistiky, money_per_hour je číslo určující
+     hodinovou mzdu, text_file je název textového souboru, ve kterém jsou na
+     řádcích za sebou uložena čísla, určující počet odpracovaných hodin, čísla
+     musí být v dekadické (desítkové) soustavě, lze použít jen přirozená čísla a
+     čísla s desetinnou tečkou,
+     příklad použití: python payment.py -dec 120 work.txt
+
+payment -sexadec money_per_hour text_file
+     vypočte celkovou mzdu a vypíše statistiky, money_per_hour je číslo určující
+     hodinovou mzdu, text_file je název textového souboru, ve kterém jsou na
+     řádcích za sebou uložena čísla, určující počet odpracovaných hodin, čísla
+     musí být v šedesátkové soustavě, na prvním místě jsou hodiny, následuje
+     oddělovač ':' a na druhém místě jsou minuty,
+     příklad použití: python payment.py -sexadec 120 work.txt
+
+payment -h - zobrazí nápovědu
+
+--------------------------------------------------------------------------------
